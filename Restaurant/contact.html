@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<!--
+    Name: Isai Chavarri 
+    Date Created: 2/16/2019 
+    Most Recent Revision: 3/1/2019
+-->
+<html lang="en"> 
+    <head> 
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width,
+		initial-scale=1, shrink-to-fit=no'>		
+        <title>Contact Us</title>	
+		<!-- JavaScript -->
+		<script src='restaurant.js' type='text/javascript'></script>
+		<noscript>JavaScript is disabled. Please enable to have the best experience.</noscript>
+		<!--Bootstrap link CDN-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    	<!--Web font from google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<!--Web font from google to make house icon-->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		
+		<!--External CSS-->
+		<link href='styles/restaurantStyles.css' rel='stylesheet' style='text/css'>
+		<style>
+			form{
+				margin-left:10px;
+				padding-top: 10px;
+				}
+			label{
+				font-weight: bold;
+				font-size: 1.1em;
+				}
+			section p {
+				text-align: center;
+				}
+		</style>
+    </head> 
+    
+    <body>
+        <header>
+            <h1>Little Chef's Cafe</h1>
+        </header>
+
+        <nav>
+			<p> 
+			<a class='btn badge-pill' href="Home.html"> <i class='fa fa-home'> </i></a>
+			<a class='btn badge-pill' href='menu.html'> Menu </a> 
+			<a class='btn badge-pill' href="contact.html"> Contact Us </a>
+        </nav>
+		
+		<section>
+			<form name='contactInfo' onsubmit='return contactVal();'>
+				<!--Full Name-->
+				<div class='form-group row'>
+				<label for="fullName" class='col-sm-5 col-md-4 col-lg-3 col-form-label
+				text-lg-right'> Name: </label> 
+				<div class='col-lg-4'>
+				<input type="text" class='form-control' id="fullName" name="fullName"> 
+				</div>
+				</div>
+				
+				<!--Email-->
+				<div class='form-group row'>
+				<label for="email" class='col-sm-5 col-md-4 col-lg-3 col-form-label
+				text-lg-right'> Email : </label>
+				<div class='col-lg-4'>
+				<input type="text" class='form-control' id="email" name="email"> 
+				</div>
+				</div>
+				<!--Phone-->
+				<div class='form-group row'>
+				<label for="phone" class='col-sm-5 col-md-4 col-lg-3 col-form-label
+				text-lg-right'> Phone: </label>
+				<div class='col-lg-4'>
+				<input type="text" class='form-control' id="phone" name="phone">
+				</div>
+				</div>
+				<!--Drop down bar-->
+				<div class='form-group row'>
+				<label for="inquiry" class='col-sm-5 col-md-4 col-lg-3
+				text-lg-right col-form-label'> Reason for Inquiry: </label>
+				<div class='col-lg-4'>
+				<select class='form-control' id="inquiry" name="inquiry">
+				<option value="catering" checked> Catering </option>
+				<option value="party"> Private Party </option>
+				<option value="feedback"> Feedback </option>
+				<option value="other"> Other </option>
+				</select>
+				</div>
+				</div>
+				
+				<!--Text box-->
+				<div class='form-group row'>
+				<label class='col-sm-5 col-md-4 col-lg-3 text-lg-right col-form-label' for="info"> Additional Information: </label>
+				<div class='col-lg-4'>
+				<textarea rows='5' class='form-control' id="info" name="info">
+				</textarea>
+				</div>
+				</div>
+				
+				<!--Radio-->
+				<div class='form-group row'>
+				<label class='col-sm-5 col-md-4 col-lg-3 text-lg-right col-form-label' for="questionnaire"> 
+					Have you ever been to the restaurant? </label>
+				<div class='col-lg-4'>
+					<div class='custom-control custom-radio custom-control-inline'>
+					<input class='custom-control-input' type="radio" id="choice1" name="questionnaire" value="no" checked/>
+					<label class='custom-control-label col-form-label' for="choice1"> No </label>
+					</div>
+				
+					<div class='custom-control custom-radio custom-control-inline'>
+					<input class='custom-control-input' type="radio" id="choice2" name="questionnaire" value="yes"/>
+					<label class='custom-control-label col-form-label' for="choice2"> Yes </label>
+					</div>
+				</div>
+				</div>
+				
+				<!--Checkbox for weekdays-->
+				<div class='form-group row'>
+				<label class='col-sm-5 col-md-4 col-lg-3 text-lg-right col-form-label' for="workdays">
+					Best days to contact you: </label>
+				<div class='col-lg-4'>
+					<div class='custom-control custom-checkbox custom-control-inline'>
+					<input class='custom-control-input' type="checkbox" id="monday" name="workdays" value="monday"/> 
+					<label class='custom-control-label col-form-label' for="monday"> M </label>
+					</div>
+				
+					<div class='custom-control custom-checkbox custom-control-inline'>
+					<input class='custom-control-input' type="checkbox" id="tuesday" name="workdays" value="tuesday"/>
+					<label class='custom-control-label col-form-label' for="tuesday"> T </label>
+					</div>
+					
+					<div class='custom-control custom-checkbox custom-control-inline'>
+					<input class='custom-control-input' type="checkbox" id="wednesday" name="workdays" value="wednesday"/>
+					<label class='custom-control-label col-form-label' for='wednesday'> W </label>
+					</div>
+				
+					<div class='custom-control custom-checkbox custom-control-inline'>
+					<input class='custom-control-input' type="checkbox" id="thursday" name="workdays" value="thursday"/>
+					<label class='custom-control-label col-form-label' for='thursday'> Th </label>
+					</div>
+					
+					<div class='custom-control custom-checkbox custom-control-inline'>
+					<input class='custom-control-input' type='checkbox' id='friday' name='workdays' value='friday'/>
+					<label class='custom-control-label col-form-label' for='friday'> F </label>
+					</div>
+				</div>
+				</div>
+				
+				<!--Submit button-->
+				<div class='text-center'>
+				<button type="submit" id='submit' name='submit'> Send Request </button>
+				</div>
+			</form>
+			<p><span id='validate'></span> </p>
+		</section>
+        <footer>
+			<p> 4328 Mofake Ln, Greenville, South Carolina, 29615 </p> 
+			<p> (864)-832-3253 </p>
+        </footer>
+	<!--CDN links copied from url:https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+	<!--JQuery first, then Popper.js, then Bootstrap JS-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body> 
+</html>

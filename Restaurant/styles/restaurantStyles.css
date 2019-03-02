@@ -1,0 +1,57 @@
+/*
+Name: Isai Chavarri
+Date Created: 2/20/2019
+Last Revision Date: 3/1/2019
+*/
+section {
+	background-color: #f7f7ba; /*#ffffb3*/ 
+	padding-top: 0;
+	padding-bottom: 10px;
+}
+header {
+	font-family: 'Lobster', cursive;
+	margin-top: 0;
+	padding-bottom: 10px;
+	margin-bottom:0;
+}
+nav{
+	border-top: black thin solid;
+	border-bottom: black thin solid;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	
+}
+nav .btn {
+			background-color: #d7ebef;
+			color: #FF0000;
+		}
+nav a {
+	margin-left: 2%;
+	text-decoration: underline;
+}
+nav .btn:visited {
+	color: #4D0099;
+}
+
+nav .btn:hover{
+	background-color: #990000;
+	color: #d7ebef;
+	font-weight: bold;
+}
+
+nav .btn:active {
+	background-color:#f7f7ba;
+	color: black;
+	text-decoration: none;
+}
+
+
+footer {
+	font-size: .9em;
+	border-top: black thin solid;
+}
+header, footer { 
+	text-align: center;
+	color: #990000;
+	background-color:#d7ebef; 
+}

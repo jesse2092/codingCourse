@@ -1,0 +1,218 @@
+<!DOCTYPE html> 
+<!--
+    Name: Isai Chavarri 
+    Date Created:  2/17/2019
+    Most Recent Revision: 3/1/2019
+-->
+<html lang="en"> 
+    <head> 
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width,
+		initial-scale=1, shrink-to-fit=no'>	
+        <title>Menu</title>	
+		<noscript>JavaScript is disabled. Please enable to have the best experience.</noscript>
+		<!-- Bootstrap link from url:https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!--Web font from google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<!--Web font from google to make house icon-->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<!--External CSS-->
+		<link href='styles/restaurantStyles.css' rel='stylesheet' style='text/css'>
+		<style>
+		th{
+			font-size: 1.1em;
+		}
+		article {
+			text-align:center;
+			font-size:.9em
+			}
+		.menuName{
+			font-family: 'Lobster', cursive;
+			font-weight:bold;
+			font-size:1.5em;
+			color: #ff6666;
+			}
+		
+		#beverages {
+			width: 90%;
+			margin-top:25px;
+			margin-left: auto;
+			margin-right: auto;
+			font-family: 'Lobster', cursive;
+			font-weight:bold;
+			font-size:1.5em;
+			}
+		#beverages tr {
+			border: 1px solid black;
+			
+			}
+		#beverages tr:nth-child(odd){
+			background-color: #d7ebef;
+			color:#ff6666;
+			
+		}
+		.price{
+			font-family: 'Lobster', cursive;
+			font-weight:bold;
+			font-size:1.2em;
+			}
+		.price2{
+			font-size:.8em;
+			}
+		#carouselNews{
+			background-color: #a3c2c2;
+			margin-top:0;
+			border-bottom: black thin solid;
+			}
+		</style>
+	
+    </head> 
+    
+    <body>
+        <header>
+            <h1>Little Chef's Cafe</h1>
+        </header>
+
+        <nav>
+			<p> 
+			<a class='btn badge-pill' href="Home.html"><i class='fa fa-home'> </i> </a> 
+			<a class='btn badge-pill' href='menu.html'> Menu </a> 
+			<a class='btn badge-pill' href="contact.html"> Contact Us </a>
+			</p>
+        </nav>
+		<!-- Food Menu -->
+		<section>
+		<div id="carouselNews" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active text-center">
+				<h3> We are opening a new location! </h3>
+				</div>
+				<div class="carousel-item text-center">
+				<h3> We're rolling out our seasonal menu, with special options for this season. </h3>
+				</div>
+				<div class="carousel-item text-center">
+				<h3> The Drink of the Month is SG Special Brew. </h3>
+				</div>
+			</div>
+  <a class="carousel-control-prev" href="#carouselNews" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselNews" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+		<article class='row'>
+		
+			<div class='col-lg-4 col-md-6'>
+				<p><div class='menuName text-center'> Burger's and Fries </div>
+					An American Classic! <br/>
+					Your choice- with or without- pickles, 
+					jalopenos tomatoes, and lettuce. 
+					Served with our deliciously cut fries. <br/>
+					<span class='price'>$8.95 </span>
+				</p>
+			</div>
+			
+			<div class='col-lg-4 col-md-6'>
+				<p><div class='menuName text-center'> Chile con Queso </div>
+					A Taste of the South! <br/> 
+					Tortilla chips with our home-made queso
+					Mixed with chille pepper, ground beef 
+					avacado and served with a side of jalopenos. <br/>
+					<span class='price'>$5.95 </span>
+				</p>
+			</div>
+			
+			<div class='col-lg-4 col-md-6'>
+				<p><div class='menuName text-center'> Philly Cheese Steak </div>
+					An All-Time Favorite!<br/>
+					Cooked with premium sirlon steak and grilled 
+					with onions and philly cheese. Topped with 
+					lettuce and tomatoes. <br/>
+					<span class='price'>$12.95 </span>
+				</p>
+			</div>
+			
+			<div class='col-lg-4 col-md-6'>
+				<p><div class='menuName text-center'> Hotdog and Fries </div>
+					An All Year Treat!<br/>
+					Served on white bread. Your choice- 
+					relish, mustard or ketchup. 
+					Served with our deliciously cut fries. <br/> 
+					<span class='price'>$6.95 </span>
+					
+				</p>
+			</div>
+			
+			<div class='col-lg-4 col-md-6'>
+				<p><div class='menuName text-center'> Cesar Salad </div>
+					A Green Choice!<br/>
+					Served with Crisp romaine lettuce, garlic 
+					crutons, our Cesar dressing and parmsen 
+					cheese. Your choice-grilled chicken or 
+					grilled shrimp. <br/>
+					<span class='price'> $14.95 </span>
+					
+				</p>
+			</div>
+			
+			<div class='col-lg-4 col-md-6'>
+				<p><div class='menuName text-center'> House Salad  </div>
+					A Healthy Choice! <br/>
+					Served with mixed romaine and iceburg
+					lettuce, cherry tomatoes, cucumbers, 
+					onions, and your choice-cesar, ranch 
+					or thousand island dressing. <br/>
+					<span class='price'>$6.95</span>
+			</div>
+		</article>
+		
+		<article class='row'>
+		<!-- Beverages Table -->
+		<table class='col-lg-4 col-md-6 col-sm-12' id='beverages'>
+		<tr>
+		<th class='menuName' style='color:#990000;'> Beverages </th>
+		<th> </th>
+		</tr> <br/>
+		
+		<tr>
+		<td>Root Beer </td>
+		<td> <span class='price2'>$3.00 </span> </td>
+		</tr> <br/>
+		
+		<tr> 
+		<td>Bottled Water </td>
+		<td> <span class='price2'> $1.25 </span> </td>
+		</tr> <br/>
+		
+		<tr>
+		<td>Lemonade</td>
+		<td> <span class='price2'>$1.00 </span> </td>
+		</tr>
+		
+		<tr>
+		<td>Iced Tea </td>
+		<td> <span class='price2'>$1.25 </span> </td>
+		</tr>
+		<tr>
+		<td>Seaside Brew </td>
+		<td> <span class='price2'>$5.45 </span> </td>
+		</tr>
+		</table>
+		</article>
+		</section>
+        <footer>
+			<p> 4328 Mofake Ln, Greenville, South Carolina, 29615 </p> 
+			<p> (864)-832-3253 </p>
+        </footer>
+		
+	<!--CDN links copied from url:https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+	<!--JQuery first, then Popper.js, then Bootstrap JS-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body> 
+</html>
